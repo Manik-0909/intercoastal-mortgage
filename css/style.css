@@ -1,0 +1,148 @@
+:root {
+   --primary-color: #1a5776;
+   --dark-primary-color: #001827;
+   --secondary-color: #ffbb40;
+   --white-color: #fff;
+   --black-color: #000;
+   --max-w: 1280px;
+   --letter-spacing: 0.28px;
+   --main-heading: 64px;
+   --sub-heading1: 48px;
+   --sub-heading2: 32px;
+   --sub-heading3: 28px;
+   --fs-24: 24px;
+   --fs-20: 20px;
+   --fs-18: 18px;
+   --fs-16: 16px;
+   --rounded-border1: 70px;
+   --rounded-border2: 50px;
+}
+
+*,
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   min-height: 100vh;
+   font-size: 14px;
+   font-family: GeneralSans500;
+   color: var(--dark-primary-color);
+   letter-spacing: var(--letter-spacing);
+}
+
+/* General Sans Font Family */
+@font-face {
+   font-family: GeneralSans500;
+   src: url(../fonts/GeneralSans-Medium.otf);
+}
+
+@font-face {
+   font-family: GeneralSans600;
+   src: url(../fonts/GeneralSans-Medium.otf);
+}
+
+/* Common CSS */
+.max-w {
+   max-width: var(--max-w);
+   margin-inline: auto;
+}
+
+.font-gs600 {
+   font-family: GeneralSans600;
+}
+
+.main-heading {
+   font-size: var(--main-heading);
+}
+
+.sub-heading1 {
+   font-size: var(--sub-heading1);
+}
+
+header .navbar-nav .nav-link {
+   color: var(--dark-primary-color);
+}
+
+header .navbar-nav .nav-link:hover {
+   color: var(--primary-color);
+}
+
+.hero-img {
+   background: url(../img/hero-bgImg.png);
+   background-repeat: no-repeat;
+   background-position: bottom;
+   background-size: cover;
+   height: 750px;
+}
+
+.secondary-btn {
+   background: var(--secondary-color) !important;
+   border-top-left-radius: 10px !important;
+   border-bottom-right-radius: 10px !important;
+   border-radius: 0;
+   padding: 10px 12px;
+}
+
+.secondary-text {
+   color: var(--secondary-color);
+}
+
+.secondary-btn:hover {
+   filter: brightness(0.9);
+   transition: all 0.5s;
+}
+
+.logo {
+   width: auto;
+   height: 60px;
+}
+
+.fs-20 {
+   font-size: var(--fs-20);
+}
+
+.form-control.fs-20::placeholder {
+   color: var(--primary-color);
+}
+
+.search-bar {
+   padding: 12px;
+   border-top-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1200px) {
+   .logo {
+      height: 50px;
+   }
+}
+
+@media only screen and (max-width: 992px) {
+   .main-heading {
+      font-size: var(--sub-heading1);
+   }
+
+   .sub-heading1 {
+      font-size: var(--sub-heading2);
+   }
+
+   .fs-20 {
+      font-size: var(--fs-18);
+   }
+
+   .hero-img {
+      height: 650px;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+   .main-heading {
+      font-size: var(--sub-heading2);
+   }
+
+   .sub-heading1 {
+      font-size: var(--sub-heading3);
+   }
+}
