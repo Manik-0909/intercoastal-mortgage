@@ -379,6 +379,10 @@ footer .max-w-lg {
    .footer-logo {
       height: 70px;
    }
+
+   .hero-img {
+      background-size: auto;
+   }
 }
 
 @media only screen and (max-width: 576px) {
@@ -388,5 +392,9 @@ footer .max-w-lg {
 
    .fs-6 {
       font-size: 14px !important;
+   }
+
+   .hero-img {
+      height: 600px;
    }
 }
